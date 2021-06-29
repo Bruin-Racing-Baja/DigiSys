@@ -1,0 +1,12 @@
+#######################################
+# Syntax coloring for DigiSys
+#######################################
+
+# Datatypes
+I2Cdev  KEYWORD1
+
+# Methods
+update  KEYWORD2
+
+# Defines
+MAX_LIN LITERAL1
