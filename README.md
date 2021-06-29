@@ -2,7 +2,7 @@
 
 Simple object to represent digital systems, controllers, filters, etc.
 
-This file contains $\LaTeX$ equations and is much better read on a dedicated markdown renderer.
+This file contains \LaTeX equations and is much better read on a dedicated markdown renderer. A PDF version is included for readability, but no guarantee that it's up to date with the markdown.
 
 ---
 
@@ -24,8 +24,8 @@ This library defines a single object called `DigiSys` which can be used to repre
 
 The possible class signatures are as follows:
 ```C++
-DigiSys(const double num[], const double den[], const int num_len, const int den_len);
-DigiSys(const double gain, const double num[], const double den[], const int num_len, const int den_len);
+DigiSys(double num[], double den[], int num_len, int den_len);
+DigiSys(double gain, double num[], double den[], int num_len, int den_len);
 ```
 - `num[]` is an array of coefficients for the transfer function numerator, arranged as $\begin{bmatrix} b_0 & b_1 & \dots & b_{m-1} \end{bmatrix}$.
 - `den[]` is an array of coefficients for the transfer function denominator, arranged as $\begin{bmatrix} a_0 & a_1 & \dots & a_{n-1} \end{bmatrix}$.
